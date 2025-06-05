@@ -8,9 +8,11 @@ a {
     text-decoration: none;
     color: #333;
 }
-html{
+
+html {
     background-color: #fff;
 }
+
 body {
     background-color: #FCF7EB;
     max-width: 1280px;
@@ -104,14 +106,76 @@ nav {
 
 /* ------------------------------------------------------------- */
 /* mainvisual */
-.mainvisual{
+.mainvisual {
     width: 100%;
 }
-.mainvisual img{
+
+.mainvisual img {
     width: 100%;
     max-width: 1280px;
     height: auto;
     display: block;
-/* margin: 0 auto; */
-/* 中央寄せ（任意） */
+    /* margin: 0 auto; */
+    /* 中央寄せ（任意） */
+}
+
+/* ------------------------------------------------------------- */
+/* concept */
+#concept {
+    text-align: center;
+    padding: 120px 100px;
+}
+
+#concept .sec-title {
+    height: 20px;
+    font-size: 24px;
+    letter-spacing: .17em;
+    margin-bottom: 35px;
+    /* text-decoration: underline;
+    text-underline-offset: 7px; */
+    position: relative;
+}
+
+#concept .sec-title::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 1px;
+    background-color: #000;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.catch {
+    max-width: 900px;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    margin: 0 auto;
+    background: radial-gradient(ellipse at center,
+            rgba(255, 0, 0, 0.15) 30%,
+            rgba(255, 0, 0, 0.08) 50%,
+            rgba(255, 0, 0, 0) 72%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vw;
+    text-align: center;
+}
+
+.catch p {
+    width: 100%;
+    font-size: clamp(11px, 2.5vw, 32px);
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .62em;
+    line-height: 1.5;
+}
+
+.catch-text {
+    margin-top: -15px;
+    font-size: clamp(8px, 1.2vw, 14px);
+    letter-spacing: .25em;
+    line-height: 1.8em;
 }
